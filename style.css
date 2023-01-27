@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    cursor:url(/cronometro/icons8-cursor-64.png),auto;
+}
+body{
+    height: 100vh;
+    background-color:rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
+    
+}
+h4{
+    color: white;
+    margin-bottom:15px;
+    font-weight: 400;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 500px;
+   background-image: radial-gradient(rgb(26, 26, 26) 60%,rgb(64, 64, 64));
+   box-shadow: 0px 80px 80px rgba(0, 0, 0, 0.504);
+   border-radius: 25px;
+   padding: 30px;
+    margin-bottom: 20px;
+}
+p{
+    font-weight:600 ;
+    color: white;
+    font-size: 6.6rem;
+    width: 100%;
+
+}
+.botoes{
+    display: flex;
+    width: 500px;
+    justify-content:space-around;
+    font-weight: 400;
+}
+
+button{
+    font-size:1.2rem;
+    background-color:rgb(85, 107, 102);
+    border-radius:10px;
+    padding: 5px 60px;
+    border: none;
+    margin-inline:5px ;
+    color: white;
+    box-shadow: 0px 15px 1px rgba(0, 0, 0, 0.285);
+    
+    
+
+}
+button:active{
+    background-color:rgb(72, 91, 87);
+    color: white;
+}
+button.inativo{
+    background-color: rgb(230, 0, 0);
+    color: rgb(193, 193, 193);
+}
+button.inativo:active{
+    background-color: rgb(163, 1, 1);
+
+}
