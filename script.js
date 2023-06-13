@@ -24,22 +24,6 @@ function iniciarCronometro(){
         }, 1);
     }
 } 
-    /* ----- função que inicia a hora, para e zera ------
-    intervalID = setIntervalID(timer, 1000);
-    function timer(){
-        let date = new Date();
-        let hour = date.getHours();
-        let minute = date.getMinutes();
-        let second = date.getSeconds();
-       
-        minute = minute.toString().padStart(2, '0');
-        second = second.toString().padStart(2, '0');
-
-        cronometro.innerHTML = `${hour}:${minute}:${second}`;
-
-        
-    }
-    */
 function formatTime(date){
 
     let hora = date.getUTCHours();
@@ -50,7 +34,7 @@ function formatTime(date){
     
 }
 function pausarCronometro(){
-    tempo = 0;
+   // tempo = 0;
     if(!pause){
         pause = true;
         clearInterval(intervalID);
@@ -58,6 +42,7 @@ function pausarCronometro(){
 }
 
 function zerarCronometro(){
+    tempo = 0;
     clearInterval(intervalID);
     cronometro.innerHTML = '00:00:00'
 }
